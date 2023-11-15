@@ -1,0 +1,75 @@
+:root {
+    font-family: Verdana, Arial, sans-serif, Georgia, Garamond, serif;
+    font-size: 16pt;
+    --white-text: white;
+}
+
+@font-face {
+    font-family: logo-font;
+    src: url(./font/Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+}
+
+.background-and-form {
+    display: flex;
+}
+
+.image-sidebar {
+    background-image: url('./background-image/ampersand-studios-unsplash.jpeg');
+    height: 100vh;
+    width: 35vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    color: var(--white-text);
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 25vh;
+}
+
+img {
+    height: 3.5rem;
+}
+
+.odin {
+    font-family: logo-font;
+    font-size: 3.3rem;
+    padding-top: 15px;
+    cursor: default;
+}
+
+.photo-credit {
+    font-size: 0.5rem;
+    color: var(--white-text);
+    text-align: center;
+    cursor: default;
+}
+
+a:link {
+    color: var(--white-text);
+}
+
+a:visited {
+    color: rgb(96, 243, 93);
+}
+
+a:hover {
+    color: lightblue;
+}
+
+a:active {
+    color: blue;
+}
