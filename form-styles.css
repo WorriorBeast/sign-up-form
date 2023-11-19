@@ -67,6 +67,10 @@ a:visited {
     color: rgb(96, 243, 93);
 }
 
+a:visited:last-child {
+    color: darkgreen;
+}
+
 a:hover {
     color: lightblue;
 }
@@ -95,6 +99,7 @@ a:active {
     height: 32vh;
     padding-right: 18vw;
     padding-left: 40px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -137,4 +142,26 @@ input, input:focus {
 
 input:focus {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.submit-container {
+    width: calc(100 - var(--sidebar-width));
+    height: calc(34vh - 10px);
+    background-color: rgb(243, 243, 243);
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+button {
+    margin: 25px 0 15px;
+    color: white;
+    background-color: #596D48;
+    border-radius: 8px;
+    width: clamp(120px, 15vw, 22%);
+    padding: 10px 0;
+    box-shadow: 3px 3px 5px rgb(204, 203, 203);
+}
+
+p:last-child, button {
+    font-size: clamp(0.4rem, .95vw, 1.1rem);
 }
