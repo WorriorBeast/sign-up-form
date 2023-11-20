@@ -67,7 +67,7 @@ a:visited {
     color: rgb(96, 243, 93);
 }
 
-a:visited:last-child {
+.submit-container > p > a:visited {
     color: darkgreen;
 }
 
