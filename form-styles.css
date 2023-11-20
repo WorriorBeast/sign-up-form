@@ -144,6 +144,37 @@ input:focus {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+input:valid {
+    outline-color: rgb(21, 176, 21);
+}
+
+input[type="text"]:valid:not(:focus), 
+input[type="email"]:valid:not(:focus),
+input[type="tel"]:valid:not(:focus, :placeholder-shown),
+input[type="password"]:valid:not(:focus) {
+    border: 1px solid rgb(21, 176, 21);
+}
+
+input[type="email"]:focus:invalid {
+    outline-color: red;
+}
+
+input[type="email"]:invalid:not(:focus, :placeholder-shown) {
+    border: 1px solid red;
+}
+
+input[type="text"]:valid:not(:focus), 
+input[type="email"]:valid:not(:focus),
+input[type="email"]:invalid:not(:placeholder-shown),
+input[type="tel"]:valid:not(:focus) {
+    padding: 2.5px 0 2.5px 6px;
+}
+
+input[type="email"]:focus:placeholder-shown,
+input[type="tel"]:focus:placeholder-shown {
+    outline-color: rgb(22, 107, 245);
+}
+
 .submit-container {
     width: calc(100 - var(--sidebar-width));
     height: calc(34vh - 10px);
