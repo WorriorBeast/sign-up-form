@@ -63,6 +63,10 @@ a:link {
     color: var(--white-text);
 }
 
+.submit-container > p > a:link {
+    color: black;
+}
+
 a:visited {
     color: rgb(96, 243, 93);
 }
@@ -75,7 +79,11 @@ a:hover {
     color: lightblue;
 }
 
-a:active {
+.submit-container > p > a:hover {
+    color: purple;
+}
+
+a:active, .submit-container > p > a:active {
     color: blue;
 }
 
