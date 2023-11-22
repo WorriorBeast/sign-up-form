@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="form-styles.css">
+    <script src="./password-validation.js" defer></script>
 </head>
 <body>
     <div class="background-and-form">
@@ -43,11 +44,11 @@
                         <label for="phone-number">PHONE NUMBER</label>
                         <input type="tel" name="phone-number" id="phone-number" placeholder="(XXX)XXX-XXXX">
                     </div>
-                    <div class="input-position">
+                    <div class="input-position error">
                         <label for="password">PASSWORD</label>
                         <input type="password" name="password" id="password" required>
                     </div>
-                    <div class="input-position">
+                    <div class="input-position error">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
                         <input type="password" name="confirm-password" id="confirm-password" required>
                     </div>
