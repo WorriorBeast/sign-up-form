@@ -173,7 +173,7 @@ input[type="email"]:invalid:not(:focus, :placeholder-shown) {
 
 input[type="text"]:valid:not(:focus), 
 input[type="email"]:valid:not(:focus),
-input[type="email"]:invalid:not(:placeholder-shown),
+input[type="email"]:invalid:not(:focus, :placeholder-shown),
 input[type="tel"]:valid:not(:focus) {
     padding: 2.5px 0 2.5px 6px;
 }
